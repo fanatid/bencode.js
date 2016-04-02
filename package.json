@@ -1,0 +1,40 @@
+{
+  "name": "bencode.js",
+  "version": "1.0.0",
+  "description": "bencode encoder/decoder",
+  "keywords": [
+    "bdecode",
+    "bencode",
+    "bencoding",
+    "bittorrent",
+    "torrent"
+  ],
+  "homepage": "https://github.com/fanatid/bencode.js",
+  "bugs": {
+    "url": "https://github.com/fanatid/bencode.js/issues"
+  },
+  "license": "MIT",
+  "author": "Kirill Fomichev <fanatid@ya.ru> (http://github.com/fanatid)",
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/bencode.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fanatid/bencode.js.git"
+  },
+  "scripts": {
+    "coverage": "nyc npm run unit",
+    "lint": "standard",
+    "test": "npm run lint && npm run unit",
+    "unit": "tape test/*.js"
+  },
+  "dependencies": {
+    "bn.js": "^4.11.1"
+  },
+  "devDependencies": {
+    "nyc": "^6.1.1",
+    "standard": "^6.0.8",
+    "tape": "^4.5.1"
+  }
+}
